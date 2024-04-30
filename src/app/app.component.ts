@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { MovieCardComponent } from './movie-card/movie-card.component';
 import { UserLoginFormComponent } from './user-login-form/user-login-form.component';
 import { UserRegistrationFormComponent } from './user-registration-form/user-registration-form.component';
 
@@ -24,6 +25,13 @@ export class AppComponent {
   // opens the dialog when the login button is clicked
   openUserLoginDialog(): void {
     this.dialog.open(UserLoginFormComponent, {
+      width: '320px',
+    });
+  }
+
+  // opens the Movies dialog when the All movies button is clicked
+  openMoviesDialog(): void {
+    this.dialog.open(MovieCardComponent, {
       width: '320px',
     });
   }
