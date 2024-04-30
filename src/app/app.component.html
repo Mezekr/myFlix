@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <div
-  class="w-full md:w-4/12 absolute right-0 left-0 p-12 bg-black my-36 mx-auto text-white rounded-lg bg-opacity-80">
+  class="flex-col justify-center  items-center w-full md:w-4/12 absolute right-0 left-0 p-12 bg-black my-36 mx-auto text-white rounded-lg bg-opacity-80">
   <h1 class="text-3xl font-bold">
     Welcome to myFlix Movie App!
   </h1>
-  <button mat-raised-button (click)="openUserRegistrationDialog()"
-    style="margin-top: 25px; padding: 25px;" color="primary">
-    Sign Up
-  </button>
+  <div class=" align-middle">
+    <button mat-raised-button (click)="openUserRegistrationDialog()"
+      style="margin: 25px ; padding: 25px;" color="primary">
+      Sign Up
+    </button>
+    <button mat-raised-button (click)="openUserLoginDialog()"
+      style="margin: 25px ; padding: 25px;" color="primary">
+      Login
+    </button>
+  </div>
 
 </div>
