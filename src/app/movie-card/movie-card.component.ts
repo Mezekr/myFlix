@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FetchApiDataService } from '../fetch-api-data.service';
-
+import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { FetchApiDataService } from '../fetch-api-data.service';
+import { MovieSynopsisComponent } from '../movie-synopsis/movie-synopsis.component';
 
 @Component({
   selector: 'app-movie-card',
@@ -12,7 +13,8 @@ export class MovieCardComponent {
   movies: any[] = [];
   constructor(
     public fetchApiData: FetchApiDataService,
-    public snackBar: MatSnackBar
+    public snackBar: MatSnackBar,
+    public dialog: MatDialog
   ) {}
 
   ngOnInit(): void {
@@ -32,6 +34,13 @@ export class MovieCardComponent {
           verticalPosition: 'top',
         });
       },
+    });
+  }
+
+  openSynopsisDialog(movie: any): void {
+    this.dialog.open(MovieSynopsisComponent, {
+      data: { movie },
+      maxWidth: '460px',
     });
   }
 }
