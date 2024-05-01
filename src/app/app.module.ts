@@ -22,6 +22,7 @@ import { UserLoginFormComponent } from './user-login-form/user-login-form.compon
 import { UserRegistrationFormComponent } from './user-registration-form/user-registration-form.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { HeaderComponent } from './header/header.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'welcome', pathMatch: 'prefix' },
@@ -37,6 +38,7 @@ const routes: Routes = [
     MovieCardComponent,
     WelcomePageComponent,
     HeaderComponent,
+    UserProfileComponent,
   ],
   imports: [
     BrowserModule,
