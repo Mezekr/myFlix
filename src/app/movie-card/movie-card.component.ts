@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { FetchApiDataService } from '../fetch-api-data.service';
+
+// Comppnents
+import { DirectorInfoComponent } from '../director-info/director-info.component';
 import { MovieSynopsisComponent } from '../movie-synopsis/movie-synopsis.component';
 
 @Component({
@@ -41,6 +44,16 @@ export class MovieCardComponent {
     this.dialog.open(MovieSynopsisComponent, {
       data: { movie },
       maxWidth: '460px',
+    });
+  }
+
+  openDirectorDialog(name: string, bio: string): void {
+    this.dialog.open(DirectorInfoComponent, {
+      data: {
+        Name: name,
+        Bio: bio,
+      },
+      width: '500px',
     });
   }
 }
