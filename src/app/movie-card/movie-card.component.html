@@ -15,13 +15,17 @@
             <button mat-raised-button color="primary">
                 Genre
             </button>
-            <button mat-raised-button color="primary">
+            <button mat-raised-button color="primary" (click)="
+            openDirectorDialog(
+              movie.Director.Name,
+              movie.Director.Bio)">
                 Director
             </button>
             <button mat-raised-button color="primary"
                 (click)="openSynopsisDialog(movie)">
                 Synopsis
             </button>
+
             <mat-icon>favorite_border</mat-icon>
         </mat-card-actions>
     </mat-card>
