@@ -24,6 +24,7 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { HeaderComponent } from './header/header.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { MovieSynopsisComponent } from './movie-synopsis/movie-synopsis.component';
+import { DirectorInfoComponent } from './director-info/director-info.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'welcome', pathMatch: 'prefix' },
@@ -41,6 +42,7 @@ const routes: Routes = [
     HeaderComponent,
     UserProfileComponent,
     MovieSynopsisComponent,
+    DirectorInfoComponent,
   ],
   imports: [
     BrowserModule,
