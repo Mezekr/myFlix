@@ -1,0 +1,29 @@
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 5rem;
+}
+.welcome-page-title {
+  color: wheat;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.welcome-page-title > p {
+  color: wheat;
+  font-size: 1rem;
+}
+.welcome-button-container {
+  width: 30%;
+  min-width: 310px;
+}
+.welcome-buttons {
+  width: 40%;
+  margin: 20px;
+  padding: 30px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.2em;
+}
