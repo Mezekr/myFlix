@@ -1,0 +1,25 @@
+<mat-toolbar
+    style=" display: flex;background-color: rgb(11, 25, 43); color: rgb(232, 235, 237); margin-bottom: 10px; "
+    class="z-10 sticky top-0 items-center justify-between hover:bg-white"
+    role="heading">
+    <div class="flex gap-5">
+        <button mat-button (click)="navigateToMovies()">
+            <span class="text-4xl text-white ">myFlix</span>
+        </button>
+        <span class="spacer"></span>
+    </div>
+    <div class="flex justify-center items-center gap-x-10 ">
+        <button class="nav-icon-button" mat-icon-button
+            (click)="navigateToMovies()" aria-label="icon-button for logout">
+            <mat-icon>local_movies</mat-icon>
+        </button>
+        <button class="nav-icon-button" mat-icon-button
+            (click)="navigateToProfile()" aria-label="icon-button for profile">
+            <mat-icon>person_outline</mat-icon>
+        </button>
+        <button class="nav-icon-button" mat-icon-button (click)="logoutUser()"
+            aria-label="icon-button for logout">
+            <mat-icon>logout</mat-icon>
+        </button>
+    </div>
+</mat-toolbar>
