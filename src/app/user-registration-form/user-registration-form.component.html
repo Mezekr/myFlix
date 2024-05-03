@@ -1,9 +1,9 @@
-<mat-card>
-    <mat-card-header>
-        <mat-card-title>Sign Up!</mat-card-title>
+<mat-card style="display: flex; ">
+    <mat-card-header style="margin: 10px auto; font-size:xx-large;">
+        <mat-card-title>Sign Up</mat-card-title>
     </mat-card-header>
     <mat-card-content>
-        <form>
+        <form style="display: flex; flex-direction: column;">
             <mat-form-field>
                 <input matInput [(ngModel)]="userData.Username"
                     placeholder="Username" type="text" name="Username" required>
@@ -23,7 +23,8 @@
         </form>
     </mat-card-content>
     <mat-card-actions>
-        <button mat-raised-button (click)="registerUser()" color="primary">
+        <button mat-raised-button (click)="registerUser()" color="primary"
+            style="margin: 5px auto;">
             Sign Up
         </button>
     </mat-card-actions>
