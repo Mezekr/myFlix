@@ -43,7 +43,8 @@ export class UserRegistrationFormComponent implements OnInit {
 
   /**
    * Function to sending the form inputs to the backend.
-   * @returns Message "User registration successful".
+   * @returns Message "User registration successful"
+   *          / 'User registerd not succesfully'.
    */
   registerUser(): void {
     this.fetchApiData.userRegistration(this.userData).subscribe({

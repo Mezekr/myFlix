@@ -55,7 +55,7 @@ export class UserProfileComponent implements OnInit {
 
   /**
    * Function for getting user.
-   * @returns users username, email, birthday, and favorite movies.
+   * @returns {JSON} users username, email, birthday, and favorite movies.
    */
   getProfile(): void {
     this.user = this.fetchApiData.getUser();
@@ -114,7 +114,7 @@ export class UserProfileComponent implements OnInit {
 
   /**
    * Function for getting all movies.
-   * @returns All movies.
+   * @returns {JSON} All movies.
    */
   getMovies(): void {
     this.fetchApiData.getAllMovies().subscribe((resp: any) => {
@@ -126,7 +126,7 @@ export class UserProfileComponent implements OnInit {
 
   /**
    * Function to get favMovie list.
-   * @returns Favorite movies of user.
+   * @returns {JSON} Favorite movies of user.
    */
   getFavMovies(): void {
     this.user = this.fetchApiData.getUser();

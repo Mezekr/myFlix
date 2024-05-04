@@ -15,7 +15,7 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 export class GenreInfoComponent implements OnInit {
   /**
    * @constructor - Constructor for GenreInfoComponent.
-   * @param data - Data containing genre information.
+   * @param data - Javascript object of Movie Genre information.
    */
   constructor(
     public dialogRef: MatDialogRef<GenreInfoComponent>,

@@ -17,7 +17,7 @@ export class MovieSynopsisComponent {
 
   /**
    * @constructor - Constructor for MovieSynopsisComponent.
-   * @param data - Data containing movie discription.
+   * @param data - Javascript object of the film description.
    */
   constructor(
     public dialogRef: MatDialogRef<MovieSynopsisComponent>,

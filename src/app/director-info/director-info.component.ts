@@ -16,7 +16,7 @@ import { FetchApiDataService } from '../fetch-api-data.service';
 export class DirectorInfoComponent implements OnInit {
   /**
    * @constructor - Constructor for DirectorInfoComponent.
-   * @param - Data containing director information.
+   * @param data - Javascript object of director information.
    */
   constructor(
     public dialogRef: MatDialogRef<DirectorInfoComponent>,
